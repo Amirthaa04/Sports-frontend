@@ -1,0 +1,137 @@
+/* .Header{
+  background-color: aquamarine;
+  width: cover;
+  padding: 30px;
+}
+.Header ul{
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 10px;
+}
+.Header ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+  margin-top: 30px;
+}
+.Header ul li a{
+  color: black;
+  font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+.Header input{
+  padding-bottom: 10px;
+  padding-left: 100px;
+  margin-left: 400px;
+}
+.List{
+  background-color:aquamarine;
+  width: 100%;
+}
+.List ul{
+  position: absolute;
+  line-height: 10px;
+}
+.List ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.List ul li a{
+  color: black;
+  font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+.ad{
+  padding-top: 80px;
+} */
+
+/* .ad {
+  background-image: url('https://ecommececeo.b-cdn.net/wp-content/uploads/2022/06/www.decibullz.com_Screenshot.png');
+  background-size: cover;
+  background-position: center;
+  /* Additional styles for the container if needed */
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+
+}
+
+.Header img {
+  margin-right: 20px;
+}
+
+.Header input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.Header ul li {
+  margin-left: 20px;
+}
+
+.Header ul li:first-child {
+  margin-left: 0;
+}
+
+.Header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Header ul li a:hover {
+  text-decoration: underline;
+}
+
+.List {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+}
+
+.List ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.List ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.List ul li:last-child {
+  margin-right: 0;
+}
+
+.List ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.List ul li a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+/* .equipment-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 20px; 
+  }
+  
+  .equipment-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .equipment-box img {
+    max-width: 100%;
+  }
+  
+  .equipment-details {
+    margin-top: 10px;
+  }
+   */
+
+   /* Add this CSS to your stylesheet */
+/* Add this CSS to your stylesheet */
+.women ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.women li {
+  display: inline-block;
+  width: 23%; /* Adjust as needed to accommodate margins and borders */
+  margin: 1%;
+  box-sizing: border-box; /* Include padding and border in the width */
+  border: 1px solid #ccc; /* Add a border around each item */
+  padding: 10px; /* Adjust padding as needed */
+  /* text-align: center; */
+}
+
+.women img {
+  max-width: 100%; /* Ensure images don't exceed their parent's width */
+  height: auto; /* Maintain aspect ratio */
+}
