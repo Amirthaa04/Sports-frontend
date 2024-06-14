@@ -1,22 +1,77 @@
-
+import React from 'react';
 import './index.css'
 import './Styles/App.css'
 import './Styles/Sports.css'
 import './Styles/Women.css'
 import './Styles/Login.css'
+import './Styles/Men.css'
+import './Styles/Kid.css'
+import './Styles/HomepageCarousel.css';
+import './Styles/Register.css'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { useNavigate } from 'react-router-dom';
 import Header from "./components/Header (2)";
-const App=()=>{
-  return(
-    <>
-    <div>
- <Header/>
- <div className='ad'>
-        <img src="https://th.bing.com/th/id/R.75e1491a3bae35d45d4dbd229a23b9b1?rik=qm0frLX%2bbob1dw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f7%2f1%2f8%2f1318781-cool-sports-wallpapers-3800x2080-photos.jpg&ehk=fYnm6UN4kmd%2bod%2bPNo8r8bytDt45FXrd9KqZXnt7Ozs%3d&risl=&pid=ImgRaw&r=0" width="100%" height="780px" />
-        {/* <img src="../Images/ad2.jpg" width="100%" height="780px" /> */}
-      </div>
-    </div>
-    </>
-  )
-}
-export default App;
+import Carousel from './components/Carousel2';
+import Footer from './components/Footer';  // Import Footer component
 
+const App = () => {
+  const navigate = useNavigate();
+
+  const relatedItems = [
+    {
+      image: 'https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=768x0',
+      title: 'Men',
+      route: '/men',
+    },
+    {
+      image: 'https://contents.mediadecathlon.com/s1045475/k$12b5f8f2f6313a7d989942235a99d296/Frame%20427321150.png?format=auto&quality=70&f=768x0',
+      title: 'Women',
+      route: '/women',
+    },
+    {
+      image: 'https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&quality=70&f=768x0',
+      title: 'Kids',
+      route: '/kid',
+    },
+    {
+      image: 'https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&quality=70&f=768x0',
+      title: 'Sports Equipment',
+      route: '/sport',
+    },
+    {
+      image: 'https://contents.mediadecathlon.com/s1068852/k$308f24b6c873ff455e975ee52622fc8e/defaut.gif?format=auto&quality=70&f=768x0',
+      title: 'Summer Collection',
+      route: '/summer',
+    },
+    {
+      image: 'https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&quality=70&f=768x0',
+      title: 'Sale',
+      route: '/sale',
+    },
+  ];
+
+  const handleItemClick = (route) => {
+    navigate(route);
+  };
+
+  return (
+    <>
+      <div>
+        <Header />
+        <Carousel />
+        <div className="related-items-container">
+          {relatedItems.map((item, index) => (
+            <div key={index} className="related-item" onClick={() => handleItemClick(item.route)}>
+              <img src={item.image} alt={item.title} className="related-item-image" />
+              <h3>{item.title}</h3>
+            </div>
+          ))}
+        </div>
+        <Footer />  {/* Include Footer */}
+      </div>
+    </>
+  );
+}
+
+export default App;

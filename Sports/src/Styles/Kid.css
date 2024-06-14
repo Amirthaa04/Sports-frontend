@@ -1,10 +1,9 @@
-
-   .sports ul {
+.kid ul {
     list-style-type: none;
     padding: 0;
   }
   
-  .sports li {
+  .kid li {
     display: inline-block;
     width: 23%; /* Adjust as needed to accommodate margins and borders */
     margin: 1%;
@@ -14,23 +13,22 @@
     /* text-align: center; */
   }
   
-  .sports img {
+  .kid img {
     max-width: 100%; /* Ensure images don't exceed their parent's width */
     height: auto; /* Maintain aspect ratio */
   }
-  
-  .sports button {
+  .kid button {
     display: block;
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
     color: #fff;
     border: none;
     padding: 8px 16px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 20px;
   }
   
-  .sports button:hover {
-    background-color: #0056b3;
+  .kid button:hover {
+    background-color: #e2a823;
   }
-  

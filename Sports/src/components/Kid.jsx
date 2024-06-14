@@ -2,9 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from '../Nav';
 import Footer from './Footer';
 
-
-
-function Women() {
+function Kid() {
     const [questions, setQuestions] = useState([]);
     const [filteredQuestions, setFilteredQuestions] = useState([]);
     const [priceCategory, setPriceCategory] = useState('All');
@@ -13,7 +11,7 @@ function Women() {
     useEffect(() => {
         async function fetchQuestions() {
             try {
-                const response = await fetch("https://sports-kya6.onrender.com/req-questions?category=women");
+                const response = await fetch("https://sports-kya6.onrender.com/req-questions?category=kid");
                 if (!response.ok) {
                     throw new Error('Failed to fetch questions');
                 }
@@ -53,7 +51,7 @@ function Women() {
                     case '4000 to 5000':
                         return price >= 4000 && price < 5000;
                     case 'Over 5000':
-                    return price >= 5000;
+                        return price >= 5000;
                     default:
                         return true;
                 }
@@ -130,9 +128,9 @@ function Women() {
                     </div>
                 </div>
             </div>
-            <Footer/>{/* Include Footer at the bottom */}
+            <Footer/>
         </>
     );
 }
 
-export default Women;
+export default Kid;
